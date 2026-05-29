@@ -18,7 +18,7 @@ export default defineConfig({
         open: true
     },
     
-    base: '/',
+    base: '/NJU-Museum-Keding/',
     build: {
         outDir: 'dist',
         assetsDir: 'assets',

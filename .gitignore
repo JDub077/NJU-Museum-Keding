@@ -67,5 +67,19 @@ dist-ssr
 .history/
 .ionide
 
+# Playwright 测试截图
+.playwright-mcp/
+
+# Spec workflow
+.spec-workflow/
+
+# 根目录模型副本（src/assets/models/ 下已有）
+/SM_XiaoKeDing.fbx
+
+# Three.js 不支持且超过 GitHub 100MB 限制的模型格式
+src/assets/models/XiaoKeDing.usdz
+src/assets/models/XiaoKeDing.imported.usdc
+public/textures/XiaoKeDing.imported-4.usdc
+
 # 构建产物
 *.tsbuildinfo 
