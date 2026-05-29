@@ -264,7 +264,7 @@ const loadFBXModel = (THREE, FBXLoader) => {
         // texgen_0 是纯绿色通道贴图，不适合做 diffuse
         // 尝试 texgen_3（偏青铜色调）和 texgen_2（中性灰）作为 diffuse
         const textureLoader = new THREE.TextureLoader();
-        const diffuseMap = textureLoader.load('/textures/0/texgen_3.jpg');
+        const diffuseMap = textureLoader.load('textures/0/texgen_3.jpg');
         diffuseMap.colorSpace = THREE.SRGBColorSpace;
 
         model.traverse((child) => {
