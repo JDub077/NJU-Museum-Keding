@@ -1,0 +1,194 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: '方正清刻本悦宋简体', '宋体', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ffffff;
+    line-height: 1.6;
+    background-color: #000000;
+    /* 保留黑色背景作为底色 */
+    background-image: url('../assets/background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* 覆盖整个视口 */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* 通用内容容器 */
+.content-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    margin: 0;
+    background-color: transparent;
+    /* 保持透明使用全局背景 */
+    color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 页面标题通用样式 */
+.page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffcebc;
+    font-size: 3.2rem;
+    text-shadow: 0 0 10px rgba(255, 206, 188, 0.3), 0 0 20px rgba(255, 206, 188, 0.2);
+    font-family: '禹卫书法简体', '方正清刻本悦宋简体', serif;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.page-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #c5af7a;
+    box-shadow: 0 0 5px rgba(255, 206, 188, 0.7);
+}
+
+/* 通用链接样式 */
+a {
+    color: #ffcebc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #c5af7a;
+}
+
+/* 通用按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: #c5af7a;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: '汉仪星字体简', '宋体', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffcebc;
+    transform: translateY(-2px);
+}
+
+/* 通用卡片容器样式 */
+.card {
+    background-color: rgba(56, 70, 61, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 2px solid #ffcebc;
+    box-shadow: 3px 0 10px rgba(255, 206, 188, 0.3);
+}
+
+/* 响应式图片 */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 段落间距 */
+p {
+    margin-bottom: 1.2rem;
+    color: #ffffff;
+    font-family: '宋体', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffcebc;
+    font-family: '方正清刻本悦宋简体', '宋体', sans-serif;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(197, 175, 122, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+/* 半透明背景容器 */
+.translucent-container {
+    background-color: rgba(56, 70, 61, 0.6);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 强调文本 */
+.emphasis-text {
+    color: #ffcebc;
+    font-weight: bold;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .content-container {
+        padding: 1.5rem;
+    }
+}
+
+/* 通用内容容器，用于子页面 */
+.page-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@font-face {
+    font-family: '禹卫书法简体';
+    src: url('../assets/禹卫书法行书简体.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '方正清刻本悦宋简体';
+    src: url('../assets/FZQKBYSJW.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '汉仪星字体简';
+    src: url('../assets/汉仪星宇体简.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

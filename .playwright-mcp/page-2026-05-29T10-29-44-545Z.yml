@@ -1,0 +1,41 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - heading "小克鼎" [level=1] [ref=e6]
+    - paragraph [ref=e7]: 中国古代青铜器文化瑰宝
+  - generic [ref=e9]:
+    - generic [ref=e12]:
+      - button "重置视角" [ref=e13] [cursor=pointer]
+      - button "暂停旋转" [ref=e14] [cursor=pointer]
+    - link "家族对比 横向对比" [ref=e15] [cursor=pointer]:
+      - /url: /comparison
+      - img "家族对比" [ref=e17]
+      - generic [ref=e18]: 横向对比
+    - link "器型深变 器型演变" [ref=e19] [cursor=pointer]:
+      - /url: /vessel-type
+      - img "器型深变" [ref=e21]
+      - generic [ref=e22]: 器型演变
+    - link "纹饰演变 纹饰演变" [ref=e23] [cursor=pointer]:
+      - /url: /decoration
+      - img "纹饰演变" [ref=e25]
+      - generic [ref=e26]: 纹饰演变
+    - link "铭文 铭文内容" [ref=e27] [cursor=pointer]:
+      - /url: /insc_font
+      - img "铭文" [ref=e29]
+      - generic [ref=e30]: 铭文内容
+    - link "鉴藏历史 鉴藏历史" [ref=e31] [cursor=pointer]:
+      - /url: /collection-view
+      - img "鉴藏历史" [ref=e33]
+      - generic [ref=e34]: 鉴藏历史
+    - link "学术成果 学术成果" [ref=e35] [cursor=pointer]:
+      - /url: /academic-research
+      - img "学术成果" [ref=e37]
+      - generic [ref=e38]: 学术成果
+  - contentinfo [ref=e39]:
+    - paragraph [ref=e40]: © 2026 小克鼎研究项目
+    - generic [ref=e41]:
+      - link "关于我们" [ref=e42] [cursor=pointer]:
+        - /url: /contact
+      - link "联系方式" [ref=e43] [cursor=pointer]:
+        - /url: /contact
+      - link "参考文献" [ref=e44] [cursor=pointer]:
+        - /url: /references

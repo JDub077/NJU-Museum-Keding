@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "useDefineForClassFields": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "types": [
+            "node",
+            "vite/client",  // 添加 Vite 类型支持
+            "vue"           // 添加 Vue 类型支持
+        ],
+        "allowJs": true,   // 允许 JavaScript 文件
+        "checkJs": false,  // 不强制检查 JS 文件
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ]
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
